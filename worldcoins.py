@@ -231,10 +231,6 @@ def main_gui():
 # MAIN APPLICATION CODE        #
 ################################
 
-# Load currencies
-coin_dictionary = load_currency_list()
-
-
 # URL and header are used for web scraping
 url = 'https://www.x-rates.com/table/?from=USD&amount=1'
 header = {
@@ -242,6 +238,8 @@ header = {
                       "99.0.4844.51 Safari/537.36",
         "X-Amzn-Trace-Id": "Root=1-6228d3e0-1613b48566e186fd4764b5f9"}
 
+# Load currencies
+coin_dictionary = load_currency_list()
 
 root = Tk()
 
